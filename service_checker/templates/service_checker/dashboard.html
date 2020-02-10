@@ -1,0 +1,20 @@
+{% extends 'service_checker/base.html' %}
+
+{% block content %}
+    <div id="dashboard">
+        <h1>Service Status</h1>
+        <div class="top-row row">
+            <p>Service name</p>
+            <p>Status</p>
+        </div>
+        {% for service in services %}
+            <div class="data-row row">
+                <p>{{ service.name }}</p>
+                <p>checking</p>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+{% endblock %}

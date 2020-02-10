@@ -1,0 +1,10 @@
+[Unit]
+Description=Example systemd service.
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/delta/unified_projects_web_dev/backend-design/system_tools/test-services
+ExecStart=/mnt/delta/unified_projects_web_dev/backend-design/system_tools/venv/bin/python a.py
+
+[Install]
+WantedBy=multi-user.targe
